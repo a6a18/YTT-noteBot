@@ -1,4 +1,6 @@
 import pymongo
+from flask import Flask, request, abort
+
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -6,14 +8,11 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-from flask import Flask, request, abort
+
 
 app = Flask(__name__)
 line_bot_api = LineBotApi('f3DH5PI/pP+u+KQbqDCXr9G3ydwq6GVEsDQOMuilVh6/geI1j+MrPnRdxoLcSH+LEBcMmhAGTptPg7moP2rZx9Dxg1MMGbOGyqwhm3FutumcNDFkvcnYr/amps46hhmV6KUW/vLuHSCXT2KKEEJ9hwdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
-
-
-
 
 
 ####### 資料庫 ######
