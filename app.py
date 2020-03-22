@@ -75,5 +75,6 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
+    myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
