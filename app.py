@@ -17,7 +17,7 @@ handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
 
 
 ####### 資料庫 ######
-
+MONGO_URL = os.environ.get('mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority')
 myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
 
 
