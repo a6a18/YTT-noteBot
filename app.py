@@ -17,8 +17,7 @@ handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
 
 
 ####### 資料庫 ######
-DB_URL = os.getenv('MONGOLAB_URI')
-myclient = pymongo.MongoClient(DB_URL)
+
 
 ###### 規則 ######
 
@@ -71,5 +70,6 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5100))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    DB_URL = os.getenv('MONGOLAB_URI')
+    myclient = pymongo.MongoClient(DB_URL)
+    app.run(debug=True, host='0.0.0.0', port=5000)
