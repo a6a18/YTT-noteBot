@@ -17,7 +17,8 @@ handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
 
 
 ####### 資料庫 ######
-myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
+DB_URL = os.getenv('MONGOLAB_URI')
+myclient = pymongo.MongoClient(DB_URL)
 
 ###### 規則 ######
 
@@ -43,10 +44,7 @@ def save_link(category, link):
     mycol = mydb[category]
     mydict = {'name': category, 'link': link}
     x = mycol.insert_one(mydict)
-    if 'pymongo.results.InsertOneResult' in x:
-        return '儲存成功'
-    else:
-        return '儲存失敗'
+    return '操作DB'
 
 
 ####### 關鍵字code #####
