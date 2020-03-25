@@ -39,6 +39,8 @@ def callback():
 
 
 def save_link(category, link):
+    DB_URL = os.getenv('MONGOLAB_URI')
+    myclient = pymongo.MongoClient(DB_URL)
     mydb = myclient['Line']
     mycol = mydb[category]
     mydict = {'name': category, 'link': link}
@@ -70,6 +72,6 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
-    DB_URL = os.getenv('MONGOLAB_URI')
-    myclient = pymongo.MongoClient(DB_URL)
+    #DB_URL = os.getenv('MONGOLAB_URI')
+    #myclient = pymongo.MongoClient(DB_URL)
     app.run(debug=True, host='0.0.0.0', port=5000)
