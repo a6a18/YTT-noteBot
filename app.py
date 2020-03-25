@@ -17,9 +17,7 @@ handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
 
 
 ####### 資料庫 ######
-MONGO_URL = os.environ.get('mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority')
 myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
-
 
 ###### 規則 ######
 
@@ -75,6 +73,5 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
-    myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5100))
     app.run(debug=True, host='0.0.0.0', port=port)
