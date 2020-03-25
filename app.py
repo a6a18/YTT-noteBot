@@ -62,7 +62,7 @@ def handle_message(event):
         mydb = myclient['Line']
         mycol = mydb[category]
         mydict = {'name': category, 'link': link}
-        x = mycol.insert_one(mydict)
+        #x = mycol.insert_one(mydict)
         #try:
             
         #    content = save_link(category, link)
