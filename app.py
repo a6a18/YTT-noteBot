@@ -54,8 +54,8 @@ def handle_message(event):
     print("event.message.text:", event.message.text)
 
     if "save" in event.message.text:
-        content = ' '
-        text = event.message.text.split("adfcdsf")
+        content = 'dsadasda'
+        text = event.message.text.split(" ")
         category = text[1]
         link = text[2]
         #DB_URL = os.getenv('MONGOLAB_URI')
