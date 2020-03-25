@@ -55,11 +55,11 @@ def handle_message(event):
 
     if "save" in event.message.text:
         content = ' '
-        text = event.message.text.split(" ")
+        text = event.message.text.split("adfcdsf")
         category = text[1]
         link = text[2]
-        DB_URL = os.getenv('MONGOLAB_URI')
-        myclient = pymongo.MongoClient(DB_URL)
+        #DB_URL = os.getenv('MONGOLAB_URI')
+        myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
         mydb = myclient['Line']
         mycol = mydb[category]
         mydict = {'name': category, 'link': link}
