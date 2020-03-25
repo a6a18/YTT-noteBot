@@ -57,10 +57,15 @@ def handle_message(event):
         text = event.message.text.split(" ")
         category = text[1]
         link = text[2]
-        try:
-            content = save_link(category, link)
-        except:
-            content = '凹嗚>< 好像出錯囉'
+        
+        mycol = mydb[category]
+        mydict = {'name': category, 'link': link}
+        x = mycol.insert_one(mydict)
+        #try:
+            
+        #    content = save_link(category, link)
+        #except:
+        #    content = '凹嗚>< 好像出錯囉'
 
         line_bot_api.reply_message(
             event.reply_token,
