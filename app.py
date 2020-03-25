@@ -57,7 +57,9 @@ def handle_message(event):
         text = event.message.text.split(" ")
         category = text[1]
         link = text[2]
-        
+        DB_URL = os.getenv('MONGOLAB_URI')
+        myclient = pymongo.MongoClient(DB_URL)
+        mydb = myclient['Line']
         mycol = mydb[category]
         mydict = {'name': category, 'link': link}
         x = mycol.insert_one(mydict)
