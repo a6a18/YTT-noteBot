@@ -68,6 +68,21 @@ def handle_message(event):
         return 0
 
 
+    
+    if "fmega" in event.message.text:
+        text = event.message.text.split(" ")
+        category = text[1]
+        link = text[2]
+        try:
+            content = category + link
+        except:
+            content = '凹嗚>< 好像出錯囉'
+
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=content))
+        return 0
+
 if __name__ == "__main__":
     DB_URL = os.getenv('MONGOLAB_URI')
     myclient = pymongo.MongoClient(DB_URL)
