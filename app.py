@@ -55,7 +55,7 @@ def find_link(category):
     mycol = mydb[category]
     link = ''
     for x in mycol.find():
-        link = link + x + '\n'
+        link = link + str(x) + '\n'
     return link
 
 ####### 關鍵字code #####
@@ -97,9 +97,10 @@ def handle_message(event):
     if "find" in event.message.text:
         text = event.message.text.split(" ")
         category = text[1]
-        content = find_link(category)
-        #content = '凹嗚>< 好像出錯囉'
-
+        try:
+            content = find_link(category)
+        except:
+            content = '凹嗚>< 好像出錯囉'
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=content))
