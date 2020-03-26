@@ -54,8 +54,8 @@ def del_link():
 def find_link(category):
     mycol = mydb[category]
     link = ''
-    for x in mycol.find():
-        link = link + x['link'] + '\n'
+    for index, value in enumerate(mycol.find()):
+        link = link + value['link'] + '\n'
     return link
 
 ####### 關鍵字code #####
