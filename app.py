@@ -114,8 +114,8 @@ def handle_message(event):
     if "目錄" in event.message.text:
         content = ''
         list_collection = mydb.list_collection_names()
-        for collection in list_collection:
-            content = content + collection + '\n'
+        for index, collection in enumerate(list_collection):
+            content = str(index) + content + collection + '\n'
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=content))
