@@ -55,7 +55,7 @@ def find_link(category):
     mycol = mydb[category]
     link = ''
     for index, value in enumerate(mycol.find()):
-        link = link + index + ' ' + value['link'] + '\n'
+        link = link + index + "." + value['link'] + '\n'
     return link
 
 ####### 關鍵字code #####
