@@ -10,13 +10,15 @@ from linebot.exceptions import (
 from linebot.models import *
 import os
 
-
 app = Flask(__name__)
-line_bot_api = LineBotApi('f3DH5PI/pP+u+KQbqDCXr9G3ydwq6GVEsDQOMuilVh6/geI1j+MrPnRdxoLcSH+LEBcMmhAGTptPg7moP2rZx9Dxg1MMGbOGyqwhm3FutumcNDFkvcnYr/amps46hhmV6KUW/vLuHSCXT2KKEEJ9hwdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi(
+    'f3DH5PI/pP+u+KQbqDCXr9G3ydwq6GVEsDQOMuilVh6/geI1j+MrPnRdxoLcSH+LEBcMmhAGTptPg7moP2rZx9Dxg1MMGbOGyqwhm3FutumcNDFkvcnYr/amps46hhmV6KUW/vLuHSCXT2KKEEJ9hwdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
 
-
 ####### 資料庫 ######
+DB_URL = os.getenv('MONGOLAB_URI')
+myclient = pymongo.MongoClient(DB_URL)
+mydb = myclient['Line']
 
 
 ###### 規則 ######
@@ -42,8 +44,19 @@ def save_link(category, link):
     mycol = mydb[category]
     mydict = {'name': category, 'link': link}
     x = mycol.insert_one(mydict)
-    return '操作DB'
+    return '資料儲存成功！'
 
+
+def del_link():
+    pass
+
+
+def find_link(category):
+    mycol = mydb[category]
+    link = ''
+    for x in mycol.find():
+        link = link + x + '\n'
+    return link
 
 ####### 關鍵字code #####
 
@@ -54,30 +67,19 @@ def handle_message(event):
     print("event.message.text:", event.message.text)
 
     if "save" in event.message.text:
-        content = 'dsadasda'
         text = event.message.text.split(" ")
         category = text[1]
         link = text[2]
-        #DB_URL = os.getenv('MONGOLAB_URI')
-        myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
-        mydb = myclient['Line']
-        mycol = mydb[category]
-        mydict = {'name': category, 'link': link}
-        print(mydict)
-        mycol.insert_one(mydict)
-        #try:
-            
-        #    content = save_link(category, link)
-        #except:
-        #    content = '凹嗚>< 好像出錯囉'
+        try:
+            content = save_link(category, link)
+        except:
+            content = '凹嗚>< 好像出錯囉'
 
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=content))
         return 0
 
-
-    
     if "fmega" in event.message.text:
         text = event.message.text.split(" ")
         category = text[1]
@@ -92,9 +94,19 @@ def handle_message(event):
             TextSendMessage(text=content))
         return 0
 
+    if "find" in event.message.text:
+        text = event.message.text.split(" ")
+        category = text[1]
+        try:
+            content = find_link(category)
+        except:
+            content = '凹嗚>< 好像出錯囉'
+
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=content))
+        return 0
+
 if __name__ == "__main__":
-    DB_URL = os.getenv('MONGOLAB_URI')
-    myclient = pymongo.MongoClient(DB_URL)
-    mydb = myclient['Line']
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
