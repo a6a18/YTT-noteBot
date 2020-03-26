@@ -51,6 +51,11 @@ def del_link():
     pass
 
 
+def find_category():
+    pass
+
+
+
 def find_link(category):
     mycol = mydb[category]
     link = ''
@@ -105,6 +110,17 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text=content))
         return 0
+
+    if "目錄" in event.message.text:
+        content = ''
+        list_collection = mydb.list_collection_names()
+        for collection in list_collection:
+            content = content + collection + '\n'
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=content))
+        return 0
+
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
