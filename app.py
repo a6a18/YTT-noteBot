@@ -115,7 +115,7 @@ def handle_message(event):
         content = ''
         list_collection = mydb.list_collection_names()
         for index, collection in enumerate(list_collection):
-            content = content + str(index) + collection + '\n'
+            content = content + str(index+1) + " " + collection + '\n'
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=content))
