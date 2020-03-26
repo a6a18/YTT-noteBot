@@ -97,10 +97,8 @@ def handle_message(event):
     if "find" in event.message.text:
         text = event.message.text.split(" ")
         category = text[1]
-        try:
-            content = find_link(category)
-        except:
-            content = '凹嗚>< 好像出錯囉'
+        content = find_link(category)
+        #content = '凹嗚>< 好像出錯囉'
 
         line_bot_api.reply_message(
             event.reply_token,
