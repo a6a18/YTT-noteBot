@@ -12,12 +12,12 @@ import os
 
 app = Flask(__name__)
 line_bot_api = LineBotApi(
-    'f3DH5PI/pP+u+KQbqDCXr9G3ydwq6GVEsDQOMuilVh6/geI1j+MrPnRdxoLcSH+LEBcMmhAGTptPg7moP2rZx9Dxg1MMGbOGyqwhm3FutumcNDFkvcnYr/amps46hhmV6KUW/vLuHSCXT2KKEEJ9hwdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('ac24d1d12114ff7d1da90f2864516da0')
+    'AS7KCSMyZ2gvSEGssLGA9sZg7EwAs3RCkT6qGPhvKsPSbQCMX1lG7kw92jmOGBVCUfki1JWjXlINJ4ZBuAoyrXYiwFik3DrT81ziBjg/c4xwQ/WKsbfJQ2lGuulhQLpzTbEgyfI+ANivUb8llZVeEwdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('1e3daba5ee10753eb11ce13f3df7ab51')
 
 ####### 資料庫 ######
-DB_URL = os.getenv('MONGOLAB_URI')
-myclient = pymongo.MongoClient(DB_URL)
+#DB_URL = os.getenv('MONGOLAB_URI')
+myclient = pymongo.MongoClient("mongodb+srv://a6a18:Aa19950501@cluster0-8ingu.mongodb.net/test?retryWrites=true&w=majority")
 mydb = myclient['Line']
 
 ###### 規則 ######

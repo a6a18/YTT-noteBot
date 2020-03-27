@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67177595-93fd-4165-9a1d-1fffa3457738" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/test/test_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/YTT-linebot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YTT-linebot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,7 +42,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tom.shen\Documents\YTT-linebot\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
     <configuration name="YTT-linebot" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="YTT-linebot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,7 +70,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YTT-linebot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,6 +83,56 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YTT-linebot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="docker://a6a18/a6a018:flask2.0/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="DockerContainerSettingsRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/opt/project" />
+              <option name="editable" value="true" />
+              <option name="hostPath" value="$PROJECT_DIR$" />
+              <option name="readOnly" value="false" />
+            </DockerVolumeBindingImpl>
+          </list>
+        </option>
+      </EXTENSION>
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
@@ -83,8 +142,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.YTT-linebot" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.app" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test" />
@@ -107,6 +172,7 @@
       <workItem from="1584885657287" duration="712000" />
       <workItem from="1585188382463" duration="8855000" />
       <workItem from="1585235128949" duration="2546000" />
+      <workItem from="1585287111915" duration="2120000" />
     </task>
     <servers />
   </component>
@@ -114,46 +180,51 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584805486155">
+    <state x="233" y="0" key="#Docker" timestamp="1585283582731">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1584805486155" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1584805482880">
+    <state x="233" y="0" key="#Docker/0.0.1280.680@0.0.1280.680" timestamp="1585283582731" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585283646479">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584805482880" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585194181936">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585283646479" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1585283498534">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585194181936" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585194181935">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585283498534" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585283799469">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585194181935" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585194181935">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585283799469" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585283799469">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585194181935" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585194181935">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585283799469" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585283799468">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585194181935" />
-    <state x="160" y="23" key="SettingsEditor" timestamp="1585235153234">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585283799468" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585283799469">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584806789307" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585283799469" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1585283531997">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585283531997" />
     <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1585235153234" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1585194549463">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1585194549463" />
-    <state x="383" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1585235129112">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state x="340" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1585287112333">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="340" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1585188382424" />
+    <state x="340" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1585287112333" />
     <state x="383" y="222" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1585235129112" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/YTT_linebot$app.coverage" NAME="app Coverage Results" MODIFIED="1585283799455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YTT_linebot$test.coverage" NAME="test Coverage Results" MODIFIED="1585194153858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
