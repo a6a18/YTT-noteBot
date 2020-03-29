@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67177595-93fd-4165-9a1d-1fffa3457738" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/YTT-linebot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YTT-linebot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
       <recent name="C:\Users\tom.shen\Documents\YTT-linebot\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.ddas">
     <configuration name="YTT-linebot" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="YTT-linebot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,6 +86,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ddas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YTT-linebot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ddas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -146,9 +168,11 @@
       <item itemvalue="Python.YTT-linebot" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.ddas" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ddas" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test" />
@@ -173,6 +197,8 @@
       <workItem from="1585188382463" duration="8855000" />
       <workItem from="1585235128949" duration="2546000" />
       <workItem from="1585287111915" duration="2120000" />
+      <workItem from="1585327854560" duration="1743000" />
+      <workItem from="1585472541712" duration="312000" />
     </task>
     <servers />
   </component>
@@ -188,6 +214,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585283646479" />
+    <state x="493" y="355" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1585404145384">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="493" y="355" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.23.1440.829@0.23.1440.829" timestamp="1585404145384" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1585283498534">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -208,20 +238,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585283799469" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1585283531997">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="160" y="23" key="SettingsEditor" timestamp="1585327865065">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585283531997" />
-    <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1585235153234" />
+    <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1585327865065" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1585194549463">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1585194549463" />
-    <state x="340" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1585287112333">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="383" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1585472541751">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="340" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1585287112333" />
     <state x="383" y="222" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1585235129112" />
+    <state x="383" y="223" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1585472541751" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YTT_linebot$app.coverage" NAME="app Coverage Results" MODIFIED="1585283799455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

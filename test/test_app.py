@@ -76,7 +76,7 @@ def handle_message(event):
     print("event.message.text:", event.message.text)
 
     if "save" in event.message.text:
-        text = event.message.text.split(" ")
+        text = event.message.text.split("\n")
         category = text[1]
         link = text[2]
         try:
