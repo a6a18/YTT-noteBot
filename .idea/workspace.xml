@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67177595-93fd-4165-9a1d-1fffa3457738" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/YTT-linebot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YTT-linebot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_app.py" afterDir="false" />
@@ -198,7 +196,7 @@
       <workItem from="1585235128949" duration="2546000" />
       <workItem from="1585287111915" duration="2120000" />
       <workItem from="1585327854560" duration="1743000" />
-      <workItem from="1585472541712" duration="312000" />
+      <workItem from="1585472541712" duration="1151000" />
     </task>
     <servers />
   </component>

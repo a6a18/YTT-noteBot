@@ -79,6 +79,8 @@ def handle_message(event):
         text = event.message.text.split("\n")
         category = text[1]
         link = text[2]
+        if " " in link:
+            link = link.replace(" ", "\n")
         try:
             content = save_link(category, link)
         except:
